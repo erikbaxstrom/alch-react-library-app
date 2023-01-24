@@ -1,14 +1,16 @@
 import Book from './Book';
 import { useBookDetail } from '../../hooks/useBookDetail';
+import { useParams } from 'react-router-dom';
 
 function BookDetail() {
-  const id = 1; // TODO: Use id from route
+  const id = useParams(); // TODO: Use id from route
   const { book, loading, error } = useBookDetail(id);
 
   if (error)
     return (
       <>
         <h1>Something went wrong :(</h1> <h2>{error}</h2>
+        {console.error(error)}
       </>
     );
 
