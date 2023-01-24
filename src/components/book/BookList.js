@@ -8,7 +8,6 @@ function BookList() {
     return (
       <>
         <h1>Something went wrong :(</h1> <h2>{error}</h2>
-        {console.error(error)}
       </>
     );
   if (loading) return <h1>Loading books...</h1>;

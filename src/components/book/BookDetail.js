@@ -10,7 +10,6 @@ function BookDetail() {
     return (
       <>
         <h1>Something went wrong :(</h1> <h2>{error}</h2>
-        {console.error(error)}
       </>
     );
 
